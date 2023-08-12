@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dev DevDetective</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <!-- heading and dark mode -->
+        <div class="container">
+
+        <div class="heading-mode">
+            <div class="dev dark-mode-text light-mode-text">DevDetective</div>
+            <p class="justlikebtn dark-mode-text light-mode-text" modeSwitch>LIGHT</p>
+        </div>
+
+
+        <!-- form section -->
+        <form class="form-container shadow">
+            <img src="./assets/images/search-icon.svg" class="search-icon" height="17px" width="19px" alt="">
+            <input type="search" class="pholder dark-mode-text light-mode-text" placeholder="Enter a GitHub username..." searchForm>
+            <div class="not-found" error>no search results</div>
+            <button searchBtn>Search</button>
+        </form>
+
+
+        <!-- git hub id seaction-->
+        <div class="user-info-container shadow">
+            <img src="" alt=""  userImage>
+
+            <!-- image and name section -->
+        <div class="user-info-content">
+
+            <div class="description">
+                <p class="dark-mode-text light-mode-text" name_user></p>
+                <p class="dark-mode-text light-mode-text" joiningDate></p>
+                <a href="" class="userId"></a>
+            </div>
+
+            <!-- experience section -->
+            <div class="dark-mode-text light-mode-text" portFolioSection>
+            </div>
+
+            <!-- repo followers  -->
+            <div class="userReach">
+                <div class="parameters" repo>
+                    <div class="reposs dark-mode-text">Repos</div>
+                    <p class="commonfont dark-mode-text light-mode-text"  totalRepos></p>
+                </div>
+
+                <div class="parameters" followers>
+                    <div class="dark-mode-text light-mode-text">Followers</div>
+                    <p class="commonfont dark-mode-text light-mode-text" totalFollowers></p>
+                </div>
+
+                <div class="parameters" following>
+                    <div class="dark-mode-text light-mode-text">Following</div>
+                    <p class="commonfont dark-mode-text light-mode-text" totalFollowing></p>
+                </div>
+            </div>
+
+            <div class="region-id-profile">
+                
+                <div class="person-info">
+                    <img  src="./assets/images/location-icon.svg" alt="">
+                    <p location class="dark-mode-text light-mode-text"></p>
+                </div>
+
+                <div class="person-info">
+                    <img  src="./assets/images/website-icon.svg" alt="">
+                    <a href="#" class="dark-mode-text light-mode-text" website></a>
+                </div>
+
+                <div class="person-info">
+                    <img src="./assets/images/twitter-icon.svg" alt="">
+                    <a href="#" class="dark-mode-text light-mode-text" twitter></a>
+                </div>
+
+                <div class="person-info">
+                    <img src="./assets/images/company-icon.svg" alt="">
+                    <p class="dark-mode-text light-mode-text" company></p>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+    </div>
+</div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

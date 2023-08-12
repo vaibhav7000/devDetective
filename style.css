@@ -1,0 +1,251 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+}
+
+:root{
+    --btn: #0079ff;
+    --btn-hover: #60abff;
+    --lm-bg: #f6f8ff;
+    --lm-bg-content: #fefefe;
+    --lm-text: #4b6a9b;
+    --lm-text-alt: #2b3442;
+    --lm-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+    --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+    --lm-icon-bg: brightness(100%);
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    max-width: 730px;
+}
+
+.heading-mode{
+    /* max-width: 730px; */
+    display: flex;
+    justify-content:space-between;
+    font-size: 2em;
+    margin-bottom: 40px;
+    align-items: baseline;
+}
+
+.dev{
+    font-weight: bold;
+}
+
+.form-container{
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-icon{
+    display: inline;
+    margin: 0px 6px ;
+
+}
+
+.form-container input{
+    all: unset;
+    flex-grow: 2;
+    margin-left: 10px;
+    font-size: 18px;
+    /* padding-right: 50px; */
+    
+}
+
+
+.form-container button:first-of-type{
+    all: unset;
+    background-color: var(--btn);
+    padding: 14px 28px;
+    font-size: 16px; ;
+    font-weight: bold;
+    color: var(--lm-bg-content);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.justlikebtn{
+    user-select: none;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+}
+
+.user-info-container{
+    overflow-wrap: break-word;
+    padding: 40px;
+    border-radius: 15px;
+    display: flex;
+    gap:50px;
+}
+
+.user-info-container img[userImage]{
+    width: 130px;
+    height: 130px;
+    border-radius: 90px;
+}
+
+.user-info-content{
+    /* margin: 20px; */
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: break-word;
+}
+
+.description{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10px;
+    row-gap: 3px;
+}
+
+.description p[joiningDate]{
+    padding-left: 35px;
+    align-self: baseline;
+    font-size: 15px;
+    padding-top: 10px;
+    justify-self: end;
+}
+
+.description p[name_user]{
+    align-self: baseline;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.userId{
+    /* all: unset; */
+
+    color: var(--btn);
+}
+
+.user-info-content div[portFolioSection]{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    line-height: 25px;
+    opacity: 0.75;
+    font-size: 15px;
+}
+
+.userReach{
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 10px;
+    border-radius: 10px;
+    /* width: 95%; */
+}
+
+.parameters{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 13px;
+}
+
+.parameters .commonfont{
+    margin-left: 10px;
+}
+
+.parameters .reposs{
+    margin-left: 10px;
+}
+
+
+.region-id-profile{
+    margin-left: 25px;
+    /* width: 70%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 16px;
+    align-self: baseline;
+    column-gap: 40px;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 15px;
+}
+
+.person-info{
+    display: flex;
+    gap: 23px;
+    align-items: baseline;
+    font-size: 14px;
+}
+
+.commonfont{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.form-container input::placeholder{
+    color: #F6F8FF;
+}
+
+
+
+.dark-mode{
+    background-color: #141D2F;
+}
+
+.light-mode{
+    background-color: #F6F8FF;
+}
+
+.dark-color{
+    background-color: #1E2A47;
+}
+
+.shadow{
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);;
+}
+
+
+.light-color{
+    background-color: #FEFEFE;
+}
+
+.light-mode-text1{
+    color: var(--lm-text);
+}
+
+.dark-mode-text1{
+    color:#F6F8FF;
+}
+
+.logo{
+    fill:#F6F8FF ;
+}
+
+.form-container input::placeholder{
+    color: var(--lm-text);
+}
+
+.not-found{
+    /* display: none; */
+    opacity: 0;
+    text-align: end;
+    user-select: none;
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
+}
